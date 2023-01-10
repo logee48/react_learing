@@ -10,7 +10,10 @@ function Func(props)
 {
   return <div>Hey, {props.name}</div>
 }
-
+function Imgloader(props)
+{
+  return <img src={props.imgurl}/>
+}
 function App() {
   return (
     <div>
@@ -18,6 +21,8 @@ function App() {
       <Func name="joe"/>
       <Func na='sma'/>
       <Func name="james"/>
+      <Imgloader imgurl="https://i.redd.it/1ylxvcstz5ba1.jpg"></Imgloader>
+      <Imgloader imgurl="1.png"></Imgloader>
     </div>    
   );
 }
