@@ -1,6 +1,6 @@
 this is react learning thingyy
 
-<img src="screen_shots/2.png>
+<img src="screen_shots/2.png">
 
 
 
