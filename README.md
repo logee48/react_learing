@@ -14,4 +14,4 @@ this is react learning thingyy
 <h2>Components -> props and state<br> Props are passed to components as arguments<br>State is inside the components, it re-render whenever there is a change happens</h2>
 <div>rendering changes using state with class</div>
 <img src="screen_shots/6.png">
-
+<div></div>
