@@ -38,22 +38,45 @@ root.render(
 // setInterval(tick,1000)
 
 
-class Ja extends Component{
+// function Newone()
+// {
+//   const ancd=(a,b)=>{
+//     alert(a+b)
+//   }
+//   return (
+//     <button onClick={()=>ancd(10,11)}>sumbit</button>
+//   )
+// }
+
+
+class Abc extends Component{
   constructor(props)
   {
-    super(props);
-    this.state = {date: new Date()}
+    super(props)
+    this.state = {total: 0}
+  }
+
+  func = ()=>{
+    this.setState({total: this.state.total+=1})
+  }
+  rest = ()=>{
+    this.setState({total:0})
+  }
+  decr = ()=>{
+    this.setState({total:this.state.total-=1})
   }
   render()
   {
-    return (
+    return(
       <div>
-        <h1>{this.state.date}</h1>
+        <h1>{this.state.total}</h1>
+        <button onClick={this.func}>inc</button>
+        <button onClick={this.decr}>dec</button>
+        <button onClick={this.rest}>reset</button>
       </div>
     )
   }
 }
-
-newroot.render(<Ja/>)
+newroot.render(<Abc/>)
 
 

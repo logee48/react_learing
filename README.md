@@ -22,3 +22,5 @@ incorrect_way: this.state.date = new Date()
 
 <h3>simple counter using setstate:</h3>
 <img src="screen_shots/7.png">
+<h3>simple counter with inc,dec and reset buttons</h3>
+<img src="screen_shots/8.png">
