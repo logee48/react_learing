@@ -37,44 +37,23 @@ root.render(
 // }
 // setInterval(tick,1000)
 
-class Bob extends Component{
+
+class Ja extends Component{
   constructor(props)
   {
     super(props);
     this.state = {date: new Date()}
-    this.count = 0
-  }
-  componentDidMount()
-  {
-    this.aa = setInterval(()=>this.abcd(),1000)
-  }
-  componentWillUnmount()
-  {
-    clearInterval(this.aa)
-  }
-  abcd()
-  {
-    this.setState({date: new Date()})
-    this.count+=1
   }
   render()
   {
     return (
       <div>
-        <h1>{this.state.date.toLocaleTimeString()}</h1>
-        <h2>{this.count}</h2>
+        <h1>{this.state.date}</h1>
       </div>
     )
   }
 }
 
-const a = (
-  <div>
-    <Bob/>
-    <Bob/>
-  </div>
-)
-
-newroot.render(a)
+newroot.render(<Ja/>)
 
 
