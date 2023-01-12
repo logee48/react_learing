@@ -14,4 +14,11 @@ this is react learning thingyy
 <h2>Components -> props and state<br> Props are passed to components as arguments<br>State is inside the components, it re-render whenever there is a change happens</h2>
 <div>rendering changes using state with class</div>
 <img src="screen_shots/6.png">
-<div></div>
+<div>
+Do not modify state directly:<br>
+correctway: this.state({date: new Date()})<br>
+incorrect_way: this.state.date = new Date()
+</div>
+
+<h3>simple counter using setstate:</h3>
+<img src="screen_shots/7.png">
