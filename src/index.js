@@ -55,15 +55,16 @@ class Abc extends Component{
     super(props)
     this.state = {total: 0}
   }
-
   func = ()=>{
-    this.setState({total: this.state.total+=1})
+    const abcd = this.state.total
+    this.setState({total: abcd+1})
   }
   rest = ()=>{
     this.setState({total:0})
   }
   decr = ()=>{
-    this.setState({total:this.state.total-=1})
+    const demo = this.state.total
+    this.setState({total: demo-1})
   }
   render()
   {
