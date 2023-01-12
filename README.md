@@ -36,3 +36,27 @@ this is correct:<br>
   }</pre>
   </div>
 <img src="screen_shots/8.png">
+
+<h2>passing parameter into button</h2>
+<pre>
+    parrr = (a)=>{
+    this.setState({total:a})
+  }
+  render()
+  {
+    return(
+      <div>
+        <h1>{this.state.total}</h1>
+        <button onClick={this.func}>inc</button>
+        <button onClick={this.decr}>dec</button>
+        <button onClick={this.rest}>reset</button>
+        <button onClick={(e)=>this.parrr(10000)}>noice</button>
+        //here we e,cuz to prevent default. which meaning we dont want to call this function when user req for this page
+        /*function abcd(e){
+            e.preventDefault()
+        }*/
+      </div>
+    )
+  }
+}</pre>
+

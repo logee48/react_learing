@@ -66,6 +66,9 @@ class Abc extends Component{
     const demo = this.state.total
     this.setState({total: demo-1})
   }
+  parrr = (a)=>{
+    this.setState({total:a})
+  }
   render()
   {
     return(
@@ -74,6 +77,7 @@ class Abc extends Component{
         <button onClick={this.func}>inc</button>
         <button onClick={this.decr}>dec</button>
         <button onClick={this.rest}>reset</button>
+        <button onClick={(e)=>this.parrr(10000)}>noice</button>
       </div>
     )
   }
