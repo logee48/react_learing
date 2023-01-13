@@ -1,6 +1,8 @@
 // import './App.css';
 
-import { Component } from "react";
+// import { Component } from "react"
+
+
 
 // const for_time = (
 //   <div>
@@ -30,33 +32,40 @@ import { Component } from "react";
 // }
 
 
+// class Abc extends Component{
+//   constructor(props)
+//   {
+//     super(props)
+//     this.state = {count: false}
+//   }
+//   adder=()=>{
+//     this.setState(prev=>({
+//       count: !prev.count
+//     }))
+//   }
+//   render()
+//   {
+//     return (
+//       <div>
+//         <h1>{this.state.count}</h1>
+//         {this.state.count ? <h2>It is true</h2>:<h2>It is False</h2>}
+//         <button onClick={this.adder}>submit</button>
+//       </div>
+//     )
+//   }
+// }
 
-class Abc extends Component{
-  constructor(props)
-  {
-    super(props);
-    this.state = {counter:0}
-  }
-  componentDidMount()
-  {
-    this.aa = setInterval(()=>this.ticker(),1000)
-  }
-  ticker()
-  {
-    this.setState({counter: this.state.counter+1})
-  }
-  render()
-  {
-    return(
-      <div><h1>{this.state.counter}</h1></div>
-    )
-  }
+function Varr(props)
+{
+  const num = props.array;
+  const list = num.map((a)=>{return <ul>{a*2}</ul>})
+  return list
 }
 function App()
 {
   return (
     <div>
-      <Abc />
+      <Varr array = {[1,2,2,4]}/>
     </div>
   )
 }

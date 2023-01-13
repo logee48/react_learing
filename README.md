@@ -1,6 +1,6 @@
 this is react learning thingyy
 
-<img src="screen_shots/2.png>
+<img src="screen_shots/2.png">
 
 
 
@@ -22,3 +22,34 @@ incorrect_way: this.state.date = new Date()
 
 <h3>simple counter using setstate:</h3>
 <img src="screen_shots/7.png">
+<h3>simple counter with inc,dec and reset buttons</h3>
+<div>
+this is correct:<br>
+<pre>decr = ()=>{
+    const demo = this.state.total
+    this.setState({total: demo-1})
+  }</pre><br>
+  
+  this is incorrect, cuz u can't modify useState directly<br>
+  <pre>decr = ()=>{
+    this.setState({total: this.state.total-=1})
+  }</pre>
+  </div>
+<img src="screen_shots/8.png">
+
+<h2>passing parameter into button</h2>
+<pre>
+//here we e,cuz to prevent default. which meaning we dont want to call this function when user req for this page
+/*function abcd(e){
+    e.preventDefault()
+}*/
+</pre>
+<img src="screen_shots/9.png">
+<h3>simple counter using button clock, ***have some doubts***</h3>
+<img src="screen_shots/10.png">
+<h1>Conditional Rendering:</h1>
+<h3>logical && condition</h3>
+<img src="screen_shots/11.png">
+<h3>if else conditional statement</h3>
+<img src="screen_shots/12.png">
+
