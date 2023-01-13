@@ -45,3 +45,11 @@ this is correct:<br>
 }*/
 </pre>
 <img src="screen_shots/9.png">
+<h3>simple counter using button clock, ***have some doubts***</h3>
+<img src="screen_shots/10.png">
+<h1>Conditional Rendering:</h1>
+<h3>logical && condition</h3>
+<img src="screen_shots/11.png">
+<h3>if else conditional statement</h3>
+<img src="screen_shots/12.png">
+

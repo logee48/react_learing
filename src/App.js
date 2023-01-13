@@ -1,6 +1,8 @@
 // import './App.css';
 
-import { Component } from "react";
+import { Component } from "react"
+
+
 
 // const for_time = (
 //   <div>
@@ -30,28 +32,29 @@ import { Component } from "react";
 // }
 
 
-
 class Abc extends Component{
   constructor(props)
   {
-    super(props);
-    this.state = {counter:0}
+    super(props)
+    this.state = {count: false}
   }
-  componentDidMount()
-  {
-    this.aa = setInterval(()=>this.ticker(),1000)
-  }
-  ticker()
-  {
-    this.setState({counter: this.state.counter+1})
+  adder=()=>{
+    this.setState(prev=>({
+      count: !prev.count
+    }))
   }
   render()
   {
-    return(
-      <div><h1>{this.state.counter}</h1></div>
+    return (
+      <div>
+        <h1>{this.state.count}</h1>
+        {this.state.count ? <h2>It is true</h2>:<h2>It is False</h2>}
+        <button onClick={this.adder}>submit</button>
+      </div>
     )
   }
 }
+
 function App()
 {
   return (
